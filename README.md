@@ -18,7 +18,7 @@
 
 ## Objetivo
 
-Promover uma plataforma que beneficie tanto pessoas que enfrentam barreiras que dificultem o acesso a um atendimento psicológico, quanto profissionais qualificados ou em formação, de forma ética e tecnológica.
+Promover uma plataforma que beneficie tanto pessoas que enfrentam barreiras que dificultem o acesso a um atendimento psicológico, quanto profissionais qualificados ou em formação, de forma e tecnológica.
 
 ---
 
