@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  
+  <title>Psiconnect-Menu</title>
+   <link rel="stylesheet" href="style.css">
+
+   </head>
+   <body>
+
+
+<div class="fixed-buttons">
+
+
+    <button class="btn-fixed" onclick="toggleIA()">
+        <img src="https://cdn-icons-png.freepik.com/128/2115/2115224.png">
+    </button>
+</div>
+
+<div id="ia-popup" class="ia-popup">
+    <div class="ia-header">
+        <span>Assistente IA</span>
+        <button class="close-ia" onclick="toggleIA()">X</button>
+    </div>
+
+    <div class="ia-body">
+        <p>Aqui você coloca sua IA, API, chatbot ou código JS.</p>
+        <textarea placeholder="Digite sua mensagem..."></textarea>
+    </div>
+</div>
+
+
+ 
+    <div class="espaço">
+    <div class="container-menu">
+   <div class="linha">
+  <div class="dropdown">
+    <button class="drop-menu">&#9776</button>
+    <div class="dropdown-content">
+      <a class="drop" href="consulta.html">Consultar-se</a>
+      <a class="drop" href="catálogo.html">Configurações</a>
+      <a class="drop" href="perfil.html">Minha Conta</a>
+      <a class="drop" href="faq.html">Ajuda</a>
+      <a class="drop" href="#">Sair</a>
+    </div>
+  </div>
+<img src="https://cdn-icons-png.freepik.com/128/2582/2582635.png" alt="" class="imgm">
+      <h1 class="h1-menu" style="text-align: center;">Psiconnect</h1>
+     
+</div>
+</div>
+
+<div class="container-banner">
+  <img src="https://media.istockphoto.com/id/1433145639/pt/foto/american-teenage-woman-sitting-in-white-office-with-laptop-she-is-a-student-studying-online.jpg?s=612x612&w=0&k=20&c=7BrezcP7bSOghbj-XwrjnmO0G5iI8xhVEWNpgWg-06A=" alt="Banner do site" class="img-banner">
+</div>
+
+</div>
+
+
+<div class="linhav">
+
+    <a class="buttons" href="prontuario.html">
+                  <img src="https://cdn-icons-png.freepik.com/128/8682/8682419.png" alt="pasta do usuário" >
+                  Minha pasta
+    </a>
+
+            <a class="buttons" href="mensagem.html">
+  <img src="https://cdn-icons-png.freepik.com/128/2115/2115224.png" alt="caixa de mensagens">       
+  Mensagens
+            </a>
+
+            <a class="buttons" href="trilhas.html">
+  <img src="https://cdn-icons-png.freepik.com/128/7698/7698945.png" alt="chat">       
+  Trilhas
+
+            </a>
+
+            <a class="buttons" href="configuracao.html">
+  <img src="https://cdn-icons-png.freepik.com/128/2340/2340332.png" alt="configurações">        
+  configurações      
+            </a>
+
+    
+</div>
+
+
+<script>
+function toggleIA(){
+    const box = document.getElementById("ia-popup");
+    box.style.display = box.style.display === "flex" ? "none" : "flex";
+}
+</script>
+
+
+   </body>
+   </html>

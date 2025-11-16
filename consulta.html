@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  
+  <title>Psiconnect-Menu</title>
+   <link rel="stylesheet" href="style.css">
+
+   </head>
+   <body>
+
+
+  <div class="fixed-buttons">
+
+   <a href="menu.html" class="btn-fixed">
+        <img src="https://cdn-icons-png.freepik.com/128/2582/2582635.png" alt="ícone">
+   </a>
+    <button class="btn-fixed" onclick="toggleIA()">
+        <img src="https://cdn-icons-png.freepik.com/128/2115/2115224.png">
+    </button>
+</div>
+
+<div id="ia-popup" class="ia-popup">
+    <div class="ia-header">
+        <span>Assistente IA</span>
+        <button class="close-ia" onclick="toggleIA()">X</button>
+    </div>
+
+    <div class="ia-body">
+        <p>Aqui você coloca sua IA, API, chatbot ou código JS.</p>
+        <textarea placeholder="Digite sua mensagem..."></textarea>
+    </div>
+</div>
+
+
+<div class="container-consulta">
+
+  <div class="left-consulta">
+
+    <button class="btn-agendar-consulta">
+      Agendar uma consulta
+<img src="https://cdn-icons-png.freepik.com/128/2582/2582635.png" alt="" class="icon-placeholder-consulta2">
+    
+    </button>
+
+    <div class="fotos-consulta">
+   
+      <img src="https://www.pngitem.com/pimgs/m/627-6275754_chad-profile-pic-profile-photo-circle-png-transparent.png" alt="" class="foto-circulo-consulta1">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfbspSuAlbAFC2RqZweFBTjOF4cWY9gizRbQKEzzLE0QdxIKrV5E-iZipiZxcdYyB7aTU&usqp=CAU" alt="" class="foto-circulo-consulta2">
+    </div>
+          <img src="https://us1.discourse-cdn.com/flex026/uploads/juce/original/2X/0/0449b1c0ac98240b37ca9071e2ec15939191b2d5.png" alt="" class="foto-circulo-consulta3">
+
+
+
+    <p class="texto-consulta">
+      Agende sua consulta com um dos nossos psicólogos de forma rápida e segura
+    </p>
+  </div>
+
+  <div class="right-consulta">
+    <div class="titulo-consulta">
+        <img  class="icon-placeholder-consulta" src="https://cdn-icons-png.freepik.com/128/6571/6571469.png" alt="">
+         <h1>Minhas consultas</h1>
+      </div>
+  
+
+    <div class="consultas-container-consulta">
+
+      <!-- FUTURAS -->
+      <div class="futuras-consulta">
+        <h3>futuras consultas</h3>
+        <div class="consulta-box-consulta">Consulta futura 1</div>
+        <div class="consulta-box-consulta">Consulta futura 2</div>
+        <div class="consulta-box-consulta">Consulta futura 3</div>
+      </div>
+
+<hr class="divider-consulta" />
+
+
+      <!-- FEITAS -->
+      <div class="feitas-consulta">
+        <h3>consultas já feitas</h3>
+        <div class="consulta-box-consulta">Consulta feita 1</div>
+        <div class="consulta-box-consulta">Consulta feita 2</div>
+      </div>
+
+    </div>
+  </div>
+
+</div>

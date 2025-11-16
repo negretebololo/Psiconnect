@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  
+  <title>Psiconnect-Menu</title>
+   <link rel="stylesheet" href="style.css">
+ 
+ </head>
+<body>
+
+ 
+  <div class="fixed-buttons">
+
+   <a href="menu.html" class="btn-fixed">
+        <img src="https://cdn-icons-png.freepik.com/128/2582/2582635.png" alt="ícone">
+   </a>
+    <button class="btn-fixed" onclick="toggleIA()">
+        <img src="https://cdn-icons-png.freepik.com/128/2115/2115224.png">
+    </button>
+</div>
+
+<div id="ia-popup" class="ia-popup">
+    <div class="ia-header">
+        <span>Assistente IA</span>
+        <button class="close-ia" onclick="toggleIA()">X</button>
+    </div>
+
+    <div class="ia-body">
+        <p>Aqui você coloca sua IA, API, chatbot ou código JS.</p>
+        <textarea placeholder="Digite sua mensagem..."></textarea>
+    </div>
+</div>
+
+  <div class="faq-container">
+    <div class="faq-title">FAQ
+<img src="" alt="">
+    </div>
+    <div class="faq-subtitle">Sempre aqui para esclarecer suas dúvidas</div>
+
+    <!-- ITEM 1 -->
+    <div class="faq-item">
+      <div class="faq-card">
+        <span>Cancelamento de assinatura</span>
+        <span class="faq-arrow">▶</span>
+      </div>
+      <div class="faq-content">
+        <p>Para cancelar sua assinatura, acesse seu perfil e clique em <b>“Gerenciar Assinatura”</b>. 
+        Lá, escolha a opção <b>“Cancelar”</b> e siga as instruções. O cancelamento é imediato e você manterá o acesso até o final do ciclo pago.</p>
+      </div>
+    </div>
+
+    <!-- ITEM 2 -->
+    <div class="faq-item">
+      <div class="faq-card">
+        <span>Problemas em marca consultas</span>
+        <span class="faq-arrow">▶</span>
+      </div>
+      <div class="faq-content">
+        <p>Se você estiver com dificuldades para marcar consultas, verifique sua conexão de internet e 
+        certifique-se de que está logado. Caso o problema persista, entre em contato com o suporte técnico pelo e-mail <b>suporte@empresa.com</b>.</p>
+      </div>
+    </div>
+
+    <!-- ITEM 3 -->
+    <div class="faq-item">
+      <div class="faq-card">
+        <span>Reclamações e Contato</span>
+        <span class="faq-arrow">▶</span>
+      </div>
+      <div class="faq-content">
+        <p>Queremos ouvir você! Envie sugestões, elogios ou reclamações pelo nosso canal de atendimento:
+        <b>contato@empresa.com</b> ou pelo formulário na seção <b>“Fale Conosco”</b> no site.</p>
+      </div>
+    </div>
+
+    <!-- ITEM 4 -->
+    <div class="faq-item">
+      <div class="faq-card">
+        <span>Central de dúvidas</span>
+        <span class="faq-arrow">▶</span>
+      </div>
+      <div class="faq-content">
+        <p>Na Central de Dúvidas você encontra tutoriais, artigos e vídeos explicativos sobre todos os recursos da plataforma. 
+        Acesse o menu superior e clique em <b>“Ajuda”</b> para explorar os tópicos disponíveis.</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Script para abrir e fechar cada dropdown
+    const faqItems = document.querySelectorAll('.faq-item');
+
+    faqItems.forEach(item => {
+      const card = item.querySelector('.faq-card');
+      const content = item.querySelector('.faq-content');
+
+      card.addEventListener('click', () => {
+        const isOpen = content.classList.contains('open');
+
+        // Fecha todos os outros
+        document.querySelectorAll('.faq-content').forEach(c => c.classList.remove('open'));
+        document.querySelectorAll('.faq-card').forEach(c => c.classList.remove('active'));
+
+        // Abre o clicado (se ainda não estiver aberto)
+        if (!isOpen) {
+          content.classList.add('open');
+          card.classList.add('active');
+        }
+      });
+    });
+  </script>
+</body>
+</html>
